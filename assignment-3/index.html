@@ -1,75 +1,137 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Ege Üniversitesi Bilgisayar Mühendisliği</title>
-    <link rel="stylesheet" type="text/css"
-          href="css/main.css"/>
-    <link rel="stylesheet" type="text/css"
-          href="bower_components/bootstrap/dist/css/bootstrap.css"/>
-    <link rel="stylesheet" type="text/css"
-          href="bower_components/bootstrap/dist/css/bootstrap-theme.css"/>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>David Chu's China Bistro</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
 </head>
 <body>
-
 <header>
     <nav id="header-nav" class="navbar navbar-default">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-9">
-                    <div class="navbar-header">
-                        <div class="col-lg-3">
-                            <a href="index.html" class="pull-left visible-md visible-lg visible-sm visible-xs">
-                                <div id="logo-img">
-                                    <img src="image/logo.png">
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-lg-9 mol-md-8 col-sm-10 col-xs-8">
-                            <div class="navbar-brand">
-                                <a href="index.html"><h1 class="text-center">Ege Üniversitesi Bilgisayar
-                                    Mühendisliği</h1>
-                                </a>
-                            </div>
-                        </div>
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                                data-target="#collapsable-nav" aria-expanded="false">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                    </div>
+            <div class="navbar-header">
+                <a href="index.html" class="pull-left visible-md visible-lg">
+                    <div id="logo-img"></div>
+                </a>
+
+                <div class="navbar-brand">
+                    <a href="index.html"><h1>Ege Üniversitesi Mühendislik Fakültesi</h1></a>
+                    <p>
+                        <span style="color: #291e67">Bilgisayar Mühendisliği Bölümü</span>
+                    </p>
                 </div>
 
-                <div class="col-lg-3">
-                    <div id="collapsable-nav" class="collapse navbar-collapse">
-                        <ul id="nav-list" class="nav navbar-nav navbar-right">
-                            <li>
-                                <a href="menu-categories.html">
-                                    <span class="glyphicon glyphicon-time"></span><br class="hidden-xs"> Tarihçe</a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span class="glyphicon glyphicon-user"></span><br class="hidden-xs"> Personel</a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span class="glyphicon glyphicon-book"></span><br class="hidden-xs">
-                                    Eğitim</a>
-                            </li>
-                        </ul><!-- #nav-list -->
-                    </div><!-- .collapse .navbar-collapse -->
-                </div>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#collapsable-nav" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
             </div>
+
+            <div id="collapsable-nav" class="collapse navbar-collapse">
+                <ul id="nav-list" class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="menu-categories.html">
+                            <span class="glyphicon glyphicon-time"></span><br class="hidden-xs"> Tarihçe</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="glyphicon glyphicon-user"></span><br class="hidden-xs"> Personel</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="glyphicon glyphicon-book"></span><br class="hidden-xs"> Eğitim</a>
+                    </li>
+
+                </ul><!-- #nav-list -->
+            </div><!-- .collapse .navbar-collapse -->
         </div><!-- .container -->
     </nav><!-- #header-nav -->
 </header>
 
+<div id="call-btn" class="visible-xs">
+    <a class="btn" href="tel:410-602-5008">
+        <span class="glyphicon glyphicon-earphone"></span>
+        410-602-5008
+    </a>
+</div>
+<div id="xs-deliver" class="text-center visible-xs">* We Deliver</div>
 
-<script type="text/javascript"
-        src="bower_components/jquery/dist/jquery.min.js"></script>
-<script type="text/javascript"
-        src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<div id="main-content" class="container">
+    <div class="jumbotron">
+        <img src="images/jumbotron_1200.jpeg" alt="Picture of restaurant" class="img-responsive visible-xs">
+    </div>
+
+    <div id="home-tiles" class="row">
+        <div class="col-md-4 col-sm-6 col-xs-12">
+            <a href="menu-categories.html">
+                <div id="menu-tile"><span>duyurular</span></div>
+            </a>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+            <a href="single-category.html">
+                <div id="specials-tile"><span>eğitim</span></div>
+            </a>
+        </div>
+        <div class="col-md-4 col-sm-12 col-xs-12">
+            <a href="https://www.google.com.tr/maps/place/Ege+%C3%9Cniversitesi+Bilgisayar+M%C3%BChendisli%C4%9Fi+B%C3%B6l%C3%BCm%C3%BC/@38.4579927,27.2112153,17z/data=!3m1!4b1!4m5!3m4!1s0x14b97d2edf7e8e55:0x5fcc67a77466c8f3!8m2!3d38.4579885!4d27.213404?hl=tr"
+               target="_blank">
+                <div id="map-tile">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3124.284501857402!2d27.21121531483103!3d38.45799268033039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b97d2edf7e8e55%3A0x5fcc67a77466c8f3!2zRWdlIMOcbml2ZXJzaXRlc2kgQmlsZ2lzYXlhciBNw7xoZW5kaXNsacSfaSBCw7Zsw7xtw7w!5e0!3m2!1str!2str!4v1509969886429"
+                            width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <span>harita</span>
+                </div>
+            </a>
+        </div>
+    </div><!-- End of #home-tiles -->
+</div><!-- End of #main-content -->
+
+<footer class="panel-footer">
+    <div class="container">
+        <div class="row">
+            <section id="links" class="col-sm-4">
+                <span>Yararlı Linkler:</span><br>
+                <ul>
+                    <li><a href="http://www.ege.edu.tr/">Ege Üniversitesi</a></li>
+                    <li><a href="http://posta.ege.edu.tr/">Ege Posta (Eski)</a></li>
+                    <li><a href="http://postayeni.ege.edu.tr/">Ege Posta (Yeni)</a></li>
+                    <li><a href="http://egetel.ege.edu.tr/">Ege Tel</a></li>
+                    <li><a href="http://www.egeduyuru.ege.edu.tr/">Ege Duyuru</a></li>
+                    <li><a href="http://www.ege.edu.tr/tr-121/Mezun.html">Mezunlar</a></li>
+                    <li><a href="http://egeweb.ege.edu.tr/harita/">Ege Harita</a></li>
+                </ul>
+                <hr class="visible-xs">
+            </section>
+            <section id="address" class="col-sm-4">
+                <span>Adres:</span><br>
+                <p>Ege Üniversitesi
+                    Mühendislik Fakültesi</p>
+                <p>Bilgisayar Mühendisliği Bölümü</p>
+                <p>Kazımdirik Mahallesi,
+                    Bornova Metro İstasyonu Karşısı,
+                    35100 Bornova / İZMİR</p>
+                <hr class="visible-xs">
+            </section>
+            <section id="contact" class="col-sm-4">
+                <span>İletişim</span>
+                <p>Telefon</p>+90 232 388 72 21<br>
+                <p>Faks</p>+90 232 339 94 05<br>
+                <p>E-Posta</p>
+                <a href="mailto:bilmuh@mail.ege.edu.tr">bilmuh@mail.ege.edu.tr</a>
+            </section>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery (Bootstrap JS plugins depend on it) -->
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
